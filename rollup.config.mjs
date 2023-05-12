@@ -27,7 +27,9 @@ export default [
       exports: "named",
       sourcemap: true,
     },
-    plugins: [typescript(), postcss()],
+    plugins: [typescript(), postcss({
+      inject: false
+    })],
     external,
   },
   {
@@ -38,7 +40,9 @@ export default [
       exports: "named",
       sourcemap: true,
     },
-    plugins: [typescript(), postcss()],
+    plugins: [typescript(), postcss({
+      inject: false
+    })],
     external,
   },
   {
